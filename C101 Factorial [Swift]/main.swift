@@ -10,7 +10,7 @@ func factorial(number: Int) -> Int{
     print("Calculating factorial(\(number))...")
 
     //check if terminal case(number < 1) and if not multiplies the (number-1)'s factorial by the current number
-    let fac = number <= 1 ? 1 : factorial(number:number-1) * number
+    let fac = number <= 1 ? 1 : (factorial(number:number-1) * number)
     let term = number <= 1 ? "Terminal" : "Non-terminal"
     
     print("\(term) case, returning \(fac).")
